@@ -143,13 +143,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1ExMQ==
-					</data>
+					<data>X1ExMQ==</data>
 					<key>Replace</key>
-					<data>
-					WFExMQ==
-					</data>
+					<data>WFExMQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -157,13 +153,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					X1ExMg==
-					</data>
+					<data>X1ExMg==</data>
 					<key>Replace</key>
-					<data>
-					WFExMg==
-					</data>
+					<data>WFExMg==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -171,13 +163,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					QURCRwk=
-					</data>
+					<data>QURCRwk=</data>
 					<key>Replace</key>
-					<data>
-					WERCRwk=
-					</data>
+					<data>WERCRwk=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -185,13 +173,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					RUhDMQ==
-					</data>
+					<data>RUhDMQ==</data>
 					<key>Replace</key>
-					<data>
-					RUgwMQ==
-					</data>
+					<data>RUgwMQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -199,13 +183,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					RUhDMg==
-					</data>
+					<data>RUhDMg==</data>
 					<key>Replace</key>
-					<data>
-					RUgwMg==
-					</data>
+					<data>RUgwMg==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -433,35 +413,27 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				gflSqgAAdSk=
-				</data>
+				<data>gflSqgAAdSk=</data>
 				<key>MatchOS</key>
 				<string>10.12.x</string>
 				<key>Name</key>
 				<string>AirPortBrcm4360</string>
 				<key>Replace</key>
-				<data>
-				gflSqgAAZpA=
-				</data>
+				<data>gflSqgAAZpA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Boot graphics glitch, 10.12.dp1 (credit denskop)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AQAAdSU=
-				</data>
 				<key>MatchOS</key>
 				<string>10.12.x</string>
+				<key>Disabled</key>
+				<true/>
 				<key>Name</key>
-				<string>IOGraphicsFamily</string>
+				<string>com.apple.iokit.IOGraphicsFamily</string>
+				<key>Find</key>
+				<data>AQAAdSU=</data>
 				<key>Replace</key>
-				<data>
-				AQAA6yU=
-				</data>
+				<data>AQAA6yU=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -469,15 +441,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				gxnUEQ==
-				</data>
+				<data>gxnUEQ==</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
+				<data>AAAAAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -485,15 +453,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				hAjsEA==
-				</data>
+				<data>hAjsEA==</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
+				<data>AAAAAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -501,43 +465,31 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				hBnUEQ==
-				</data>
+				<data>hBnUEQ==</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				NgLsEA==
-				</data>
+				<data>NgLsEA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Zeroing 10ec0262 codec (patched by AppleHDA Patcher.app)</string>
 				<key>Find</key>
-				<data>
-				YgLsEA==
-				</data>
+				<data>YgLsEA==</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
+				<data>AAAAAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Zeroing 10ec0885 codec (patched by AppleHDA Patcher.app)</string>
 				<key>Find</key>
-				<data>
-				hQjsEA==
-				</data>
+				<data>hQjsEA==</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
+				<data>AAAAAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -545,31 +497,23 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				YQLsEA==
-				</data>
+				<data>YQLsEA==</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
+				<data>AAAAAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AEFQUExFIFNTRAA=
-				</data>
+				<true/>
 				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
+				<string>com.apple.iokit.IOAHCIBlockStorage</string>
+				<key>Find</key>
+				<data>AEFQUExFIFNTRAA=</data>
 				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAAA=
-				</data>
+				<data>AAAAAAAAAAAAAAA=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -577,15 +521,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				SIX/dEdIiwc=
-				</data>
+				<data>SIX/dEdIiwc=</data>
 				<key>Name</key>
 				<string>IOBluetoothFamily</string>
 				<key>Replace</key>
-				<data>
-				Qb4PAAAA60Q=
-				</data>
+				<data>Qb4PAAAA60Q=</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -593,15 +533,11 @@
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				QYP8/3QsSA==
-				</data>
+				<data>QYP8/3QsSA==</data>
 				<key>Name</key>
 				<string>AirPortBrcm4360</string>
 				<key>Replace</key>
-				<data>
-				ZscGSU7rKw==
-				</data>
+				<data>ZscGSU7rKw==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>

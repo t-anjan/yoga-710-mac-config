@@ -10,12 +10,12 @@
  *     Checksum         0x00
  *     OEM ID           "APPLE "
  *     OEM Table ID     "CpuPm"
- *     OEM Revision     0x00021200 (135680)
+ *     OEM Revision     0x00021500 (136448)
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20140210 (538182160)
  */
 
-DefinitionBlock ("ssdt.aml", "SSDT", 1, "APPLE ", "CpuPm", 0x00021200)
+DefinitionBlock ("ssdt.aml", "SSDT", 1, "APPLE ", "CpuPm", 0x00021500)
 {
     External (\_PR_.CPU0, DeviceObj)
     External (\_PR_.CPU1, DeviceObj)
@@ -26,7 +26,7 @@ DefinitionBlock ("ssdt.aml", "SSDT", 1, "APPLE ", "CpuPm", 0x00021200)
     {
         Method (_INI, 0, NotSerialized)
         {
-            Store ("ssdtPRGen version.....: 21.2 / Mac OS X 10.12.1 (16B2555)", Debug)
+            Store ("ssdtPRGen version.....: 21.5 / Mac OS X 10.12.5 (16F73)", Debug)
             Store ("custom mode...........: 0", Debug)
             Store ("host processor........: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz", Debug)
             Store ("target processor......: i5-7200U", Debug)
@@ -81,7 +81,7 @@ DefinitionBlock ("ssdt.aml", "SSDT", 1, "APPLE ", "CpuPm", 0x00021200)
         Method (ACST, 0, NotSerialized)
         {
             Store ("Method _PR_.CPU0.ACST Called", Debug)
-            Store ("CPU0 C-States    : 253", Debug)
+            Store ("CPU0 C-States    : 29", Debug)
 
             /* Low Power Modes for CPU0 */
             Return (Package (0x06)
