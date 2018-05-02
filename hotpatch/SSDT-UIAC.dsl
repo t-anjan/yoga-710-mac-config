@@ -55,6 +55,22 @@ DefinitionBlock ("", "SSDT", 2, "hack", "UIAC", 0)
             },
         })
     }
-}
 
+    Device(_SB.USBX)
+    {
+        Name(_ADR, 0)
+        Method (_DSM, 4)
+        {
+            If (!Arg2) { Return (Buffer() { 0x03 } ) }
+            Return (Package()
+            {
+                // these values from iMac17,1
+                "kUSBSleepPortCurrentLimit", 2100,
+                "kUSBSleepPowerSupply", 4700,
+                "kUSBWakePortCurrentLimit", 2100,
+                "kUSBWakePowerSupply", 4700,
+            })
+        }
+    }
+}
 //EOF
