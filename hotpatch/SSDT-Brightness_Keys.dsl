@@ -2,10 +2,10 @@ DefinitionBlock("", "SSDT", 2, "hack", "brightnesskeys", 0)
 {
     
     External (\_SB.PCI0.LPCB.PS2K, DeviceObj)
-    External (\_SB.PCI0.LPCB.EC0, DeviceObj)    // (from opcode)
+    External (\_SB.PCI0.LPCB.EC, DeviceObj)    // (from opcode)
     
     // For brightness keys.
-    Scope (_SB.PCI0.LPCB.EC0)
+    Scope (_SB.PCI0.LPCB.EC)
     {
         Method (_Q11, 0, NotSerialized)  // _Qxx: EC Query
         {
