@@ -523,6 +523,18 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>0x591b0000, eliminate all external ports (0204 and 0306)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
+				<key>Find</key>
+				<data>AgQKAAAIAACHAQAAAwYKAAAEAACHAQAA/wAAAAEAAAAgAAAA</data>
+				<key>Replace</key>
+				<data>/wAAAAEAAAAgAAAA/wAAAAEAAAAgAAAA/wAAAAEAAAAgAAAA</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>New USB Raise Port limit patch (10.13.4+ by PMHeart)</string>
 				<key>Disabled</key>
 				<false/>
