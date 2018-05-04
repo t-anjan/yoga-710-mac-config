@@ -77,16 +77,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change H_EC to EC</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>SF9FQw==</data>
-					<key>Replace</key>
-					<data>RUNfXw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change ECDV to EC</string>
 					<key>Disabled</key>
 					<true/>
@@ -108,14 +98,6 @@
 					<string>change HECI to IMEI</string>
 					<key>Find</key>
 					<data>SEVDSQ==</data>
-					<key>Replace</key>
-					<data>SU1FSQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change MEI to IMEI</string>
-					<key>Find</key>
-					<data>TUVJXw==</data>
 					<key>Replace</key>
 					<data>SU1FSQ==</data>
 				</dict>
@@ -156,52 +138,6 @@
 					<data>X1ExMg==</data>
 					<key>Replace</key>
 					<data>WFExMg==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change ADBG to XDBG, pair with SSDT-ADBG.aml (Anjan)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>QURCRwk=</data>
-					<key>Replace</key>
-					<data>WERCRwk=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change EHC1 to EH01, optionally pair with SSDT-EH01.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>RUhDMQ==</data>
-					<key>Replace</key>
-					<data>RUgwMQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change EHC2 to EH02, optionally pair with SSDT-EH02.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>RUhDMg==</data>
-					<key>Replace</key>
-					<data>RUgwMg==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change PCI0.VID to IGPU #1 (Thinkpad)</string>
-					<key>Find</key>
-					<data>UENJMFZJRF8=</data>
-					<key>Replace</key>
-					<data>UENJMElHUFU=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change PCI0.VID to IGPU #2 (Thinkpad)</string>
-					<key>Find</key>
-					<data>VklEXwhfQURSDAAAAgA=</data>
-					<key>Replace</key>
-					<data>SUdQVQhfQURSDAAAAgA=</data>
 				</dict>
 			</array>
 		</dict>
@@ -253,67 +189,67 @@
 		<key>AddProperties</key>
 		<array>
 			<dict>
+				<key>Comment</key>
+				<string>Inject "name" as (data)"#display" to disable graphics drivers on NVidia</string>
 				<key>Device</key>
 				<string>NVidia</string>
 				<key>Key</key>
 				<string>name</string>
 				<key>Value</key>
 				<data>I2Rpc3BsYXkA</data>
-				<key>Comment</key>
-				<string>Inject &quot;name&quot; as (data)&quot;#display&quot; to disable graphics drivers on NVidia</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>Inject "IOName" as "#display" to disable graphics drivers on NVidia</string>
 				<key>Device</key>
 				<string>NVidia</string>
 				<key>Key</key>
 				<string>IOName</string>
 				<key>Value</key>
 				<string>#display</string>
-				<key>Comment</key>
-				<string>Inject &quot;IOName&quot; as &quot;#display&quot; to disable graphics drivers on NVidia</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>Inject bogus class-code to prevent graphics drivers loading for NVidia</string>
 				<key>Device</key>
 				<string>NVidia</string>
 				<key>Key</key>
 				<string>class-code</string>
 				<key>Value</key>
 				<data>/////w==</data>
-				<key>Comment</key>
-				<string>Inject bogus class-code to prevent graphics drivers loading for NVidia</string>
 			</dict>
 		</array>
 		<key>#AddProperties</key>
 		<array>
 			<dict>
+				<key>Comment</key>
+				<string>hda-gfx=onboard-1 for HDMI audio</string>
 				<key>Device</key>
 				<string>IntelGFX</string>
 				<key>Key</key>
 				<string>hda-gfx</string>
 				<key>Value</key>
 				<data>b25ib2FyZC0xAA==</data>
-				<key>Comment</key>
-				<string>hda-gfx=onboard-1 for HDMI audio</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>hda-gfx=onboard-1 for HDMI audio</string>
 				<key>Device</key>
 				<string>HDA</string>
 				<key>Key</key>
 				<string>hda-gfx</string>
 				<key>Value</key>
 				<data>b25ib2FyZC0xAA==</data>
-				<key>Comment</key>
-				<string>hda-gfx=onboard-1 for HDMI audio</string>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>layout-id=3</string>
 				<key>Device</key>
 				<string>HDA</string>
 				<key>Key</key>
 				<string>layout-id</string>
 				<key>Value</key>
 				<data>AwAAAA==</data>
-				<key>Comment</key>
-				<string>layout-id=3</string>
 			</dict>
 			<dict>
 				<key>Device</key>
@@ -422,14 +358,27 @@
 		<true/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
-		<key>KernelLapic</key>
-		<true/>
-		<key>KernelPm</key>
-		<true/>
 		<key>ForceKextsToLoad</key>
 		<array>
 			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
 			<string>\System\Library\Extensions\AppleIntelKBLGraphicsFramebuffer.kext</string>
+		</array>
+		<key>KernelLapic</key>
+		<true/>
+		<key>KernelPm</key>
+		<true/>
+		<key>KernelToPatch</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>ILniAAAADzA=</data>
+				<key>Replace</key>
+				<data>ILniAAAAkJA=</data>
+			</dict>
 		</array>
 		<key>KextsToPatch</key>
 		<array>
@@ -548,19 +497,6 @@
 				<data>g32UDw+DlwQAAA==</data>
 				<key>Replace</key>
 				<data>g32UD5CQkJCQkA==</data>
-			</dict>
-		</array>
-		<key>KernelToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>ILniAAAADzA=</data>
-				<key>Replace</key>
-				<data>ILniAAAAkJA=</data>
 			</dict>
 		</array>
 	</dict>
