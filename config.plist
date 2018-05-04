@@ -139,6 +139,26 @@
 					<key>Replace</key>
 					<data>WFExMg==</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>_SB.PCI0.I2C1.TPL1._CRS to _SB.PCI0.I2C1.TPL1.XCRS</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X0NSUwCgDpVPU1lTC9wHpFNCRkk=</data>
+					<key>Replace</key>
+					<data>WENSUwCgDpVPU1lTC9wHpFNCRkk=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>GPIO._STA to GPIO.XSTA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1NUQQCgCZNTQlJHAKQA</data>
+					<key>Replace</key>
+					<data>WFNUQQCgCZNTQlJHAKQA</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
@@ -497,6 +517,34 @@
 				<data>g32UDw+DlwQAAA==</data>
 				<key>Replace</key>
 				<data>g32UD5CQkJCQkA==</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Disabled</key>
+				<false/>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelLpssI2C</string>
+				<key>Find</key>
+				<data>SU9LaXQ=</data>
+				<key>Replace</key>
+				<data>SU9LaXM=</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Prevent Apple I2C kexts from attaching to I2C controllers, credit CoolStar</string>
+				<key>Disabled</key>
+				<false/>
+				<key>InfoPlistPatch</key>
+				<true/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelLpssI2CController</string>
+				<key>Find</key>
+				<data>SU9LaXQ=</data>
+				<key>Replace</key>
+				<data>SU9LaXM=</data>
 			</dict>
 		</array>
 	</dict>
