@@ -37,16 +37,6 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>T1NJRA==</data>
-					<key>Replace</key>
-					<data>WFNJRA==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change _OSI to XOSI</string>
 					<key>Disabled</key>
 					<false/>
@@ -72,16 +62,6 @@
 					<false/>
 					<key>Find</key>
 					<data>RUMwXw==</data>
-					<key>Replace</key>
-					<data>RUNfXw==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change ECDV to EC</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>RUNEVg==</data>
 					<key>Replace</key>
 					<data>RUNfXw==</data>
 				</dict>
@@ -148,6 +128,8 @@
 					<data>X0NSUwCgDpVPU1lTC9wHpFNCRkk=</data>
 					<key>Replace</key>
 					<data>WENSUwCgDpVPU1lTC9wHpFNCRkk=</data>
+					<key>TgtBridge</key>
+					<data>VFBMMQ==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
